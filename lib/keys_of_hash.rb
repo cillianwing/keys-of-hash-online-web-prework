@@ -1,14 +1,12 @@
 class Hash
   def keys_of(*arguments)
-    # code goes here
     animal_array = []
-    arguments.each do |key|
-      each do |k, v|
-        if key == v 
-          animal_array << k
-        end
+    self.each do |key, value|
+      if arguments.include?(value) 
+        animal_array << key
       end
     end
     animal_array
   end
+    
 end
