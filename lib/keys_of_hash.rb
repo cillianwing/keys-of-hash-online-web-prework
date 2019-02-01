@@ -6,6 +6,7 @@ class Hash
         new_array.push(key)
       end
     end
+    new_array
   end
     
 end
